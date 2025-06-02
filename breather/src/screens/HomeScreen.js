@@ -264,7 +264,8 @@ const HomeScreen = ({ navigation }) => {
       {/* Milestone Celebration Modal */}
       <MilestoneCelebration
         visible={showMilestone}
-        milestone={currentMilestone}
+        milestone={currentMilestone?.value}
+        type={currentMilestone?.type}
         onClose={handleMilestoneClose}
       />
 
